@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navegacionweb.Paginas.Menu"
+             Title="App CITAS">
+    <VerticalStackLayout
+        Padding="30, 0"
+        Spacing="40">
+        <Label Text="MENU" FontSize="36" TextColor="Gray"/>
+        
+        <Button Text="Reservar cita" Clicked="Button_Clicked" BackgroundColor="Fuchsia" TextColor="White"/>
+        <Button Text="Consultar cita" Clicked="Button_Clicked_1" BackgroundColor="Fuchsia" TextColor="White"/>
+        <Button Text="Cerrar sesion" Clicked="Button_Clicked_2" BackgroundColor="Fuchsia" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

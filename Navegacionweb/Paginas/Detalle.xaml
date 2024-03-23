@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navegacionweb.Paginas.Detalle"
+             Title="Detalle">
+    <VerticalStackLayout
+         Spacing="25"
+         Padding="30,0">
+
+
+        <Label Text="Fecha"/> 
+        <Entry x:Name="EntryFecha" Placeholder="Ingrese su fecha" />
+
+        <Label Text="Especialidad"/>
+        <Picker x:Name="picker"
+        Title="Sleccionar">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Psicologo</x:String>
+                    <x:String>Odontologo</x:String>
+                    <x:String>Ciruano</x:String>
+                    <x:String>Enfermera</x:String>
+                    <x:String>Orpedista</x:String>
+                   
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Medico"/>
+        <Entry x:Name="EntryMedico" Placeholder="Ingrese su cargo" />
+
+        <Button Text="Reservar" Clicked="Button_Clicked"  BackgroundColor="Fuchsia" TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>

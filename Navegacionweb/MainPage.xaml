@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navegacionweb.MainPage"
+             Title="App CITAS">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0">
+            
+            <Label Text="Tipo de documento"/>
+            <Entry x:Name="EntryTipodedocumento" Placeholder="Tipo de documento" />
+            <Label Text="Usuario"/>
+            <Entry x:Name="EntryUsuario" Placeholder="Ingrese su usuario" />
+            <Label Text="Contraseña"/>
+            <Entry x:Name="EntryContraseña" Placeholder="Ingrese la contraseña" />
+
+
+
+            <Button Text="Iniciar sesion" Clicked="Button_Clicked_1" BackgroundColor="Fuchsia" TextColor="White"/>
+            <Label Text="¿Olvido su contraseña?" HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+ 
